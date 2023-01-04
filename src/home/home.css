@@ -1,0 +1,10 @@
+.container-custom{
+    height: 500px;
+    background-color: rgb(177, 233, 233);
+    width: 280px;
+    margin-left: 83%;
+}
+.profile{
+    margin-left: 5%;
+    padding-top: 10%;
+}
