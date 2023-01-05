@@ -115,7 +115,7 @@ const UserRegister = (props) => {
     }
   };
   const phoneValidate = (phone) => {
-    const rejexPhone = new RegExp(/^\d{10}[^a-z][^A-Z]$/);
+    const rejexPhone = new RegExp(/^[0-9]$/);
     setPhoneNumber(phone);
     if (!rejexPhone.test(parseInt(phone))) {
       setPhoneCheck(
@@ -310,7 +310,7 @@ const UserRegister = (props) => {
               type="submit"
               className="btn btn-success"
               disabled={
-                usernameCheck!='username' || emailCheck!='email' || phoneCheck!='phone' || passwordCheck!='password'
+                usernameCheck!=='username' || emailCheck!=='email' || phoneCheck!=='phone' || passwordCheck!=='password'
                   ? true
                   : false
               }
